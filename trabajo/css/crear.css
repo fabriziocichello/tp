@@ -1,0 +1,93 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Valorant;
+}
+
+@font-face {
+    font-family: Valorant;
+    src: url(../font/Valorant\ Font.ttf) format('truetype');
+}
+
+body {
+    background-image: url(../img/fade.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+:root {
+    --red: #f94555;
+    --black: #050000;
+    --blue: #0A081A;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgba(123, 126, 127, 0.6);
+    width: 30%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.login-inputs {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-inputs p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+
+.login-inputs input {
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+input:focus {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--red);
+    transition: 0.3s;
+}
+
+.login-inputs button {
+    width: 45%;
+    height: 35px;
+    font-size: 15px;
+    background-color: var(--blue);
+    color: var(--red);
+    font-family: Valorant;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--red);
+    color: var(--blue);
+    transition: all 0.2s ease-in;
+}
